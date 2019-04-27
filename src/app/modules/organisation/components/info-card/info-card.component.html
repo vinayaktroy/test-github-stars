@@ -1,0 +1,26 @@
+<div class="p-0">
+    <img class="card-img-top card_image" src="https://placeimg.com/640/480/tech" alt="Card image cap">
+    <div class="avatar-div w-100 d-flex justify-content-center">
+      <img [src]="organizationDetails.avatar_url" class="avatar-image" alt="avatar">
+    </div>
+    <div class="text-center mt-3">
+      <p class="company-name m-0">{{organizationDetails.name}}</p>
+      <p class="text-muted">@{{organizationDetails.login}}</p>
+      <p class="company-desc">"{{organizationDetails.description || 'The next generation Framework'}}"</p>
+    </div>
+    <div class="d-flex justify-content-around mb-3 tag-info mx-2 p-2">
+      <div class="company-tag">
+        <p class="count m-0">{{organizationDetails.public_repos}}</p>
+        <p class="desc m-0">Repos</p>
+      </div>
+      <div class="company-tag">
+          <p class="count m-0">28</p>
+          <p class="desc m-0">People</p>
+        </div>
+        <div class="company-tag">
+            <p class="count m-0">12</p>
+            <p class="desc m-0">Followers</p>
+          </div>
+
+    </div>
+  </div>

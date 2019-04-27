@@ -1,0 +1,30 @@
+<div class="container pl-0 mx-2" *ngIf="membersList && membersList.length">
+  <div class="card p-3">
+      <span routerLink="/organization" class="back-icon" *ngIf="!previewMode">
+        <i class="fa fa-arrow-left"></i> Back
+      </span>
+    <div class="col-12 head">
+     Team Members
+    </div>
+    <div class="col-12" *ngFor="let member of membersList">
+      <div class="row member">
+        <div class="col-4">
+          <img class="avatar" [src]="member.avatar_url" alt="">
+        </div>
+        <div class="col-8">
+          <p class="name">{{member.login}}</p>
+          <p class="username">{{member.login}}@angular</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 see-all" *ngIf="previewMode">
+      <div class="row member p-3">
+        <div class="col-12 text-center">
+          <p class="username" routerLink="members">See All</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

@@ -1,0 +1,41 @@
+<div class="row card p-2 m-2">
+  <div class="col-12">
+    <p class="head mb-1"> Repos Of Angular Organization</p>
+    <p class="text-muted">These are public repos</p>
+  </div>
+  <div class="col-12 table-responsive">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">ID</th>
+          <th scope="col">Name</th>
+          <th scope="col">URL</th>
+          <th scope="col">Watchers</th>
+          <th scope="col">Open Issues</th>
+        </tr>
+      </thead>
+      <tbody>
+        <ng-container *ngFor="let repo of repositoryList;let i = index;">
+            <tr *ngIf="i<5 || seeAllList">
+                <td>{{i +1}}</td>
+                <td>{{repo.name}}</td>
+                <td><a [href]="repo.html_url" target="_blank">{{repo.html_url}}</a></td>
+                <td>{{repo.watchers}}</td>
+                <td>{{repo.open_issues}}</td>
+              </tr>
+             
+        </ng-container>
+        <tr *ngIf="!seeAllList && repositoryList && repositoryList.length" >
+            <td colspan="5" class="text-center see-all" >
+             <p (click)="seeAllList = true">See All</p> 
+            </td>
+        </tr>
+        <tr *ngIf="!repositoryList" >
+            <td colspan="5" class="text-center">No Data Found</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+
+</div>

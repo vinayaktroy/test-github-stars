@@ -1,0 +1,15 @@
+<div class="container-fluid">
+  <div class="row p-2 d-flex flex-wrap">
+    <div class="col-md-4 card p-0 my-2">
+        <app-info-card *ngIf="organizationDetails" [organizationDetails]="organizationDetails"></app-info-card>
+    </div>
+    <div class="col-md-8 p-0 my-2">
+      <app-members [previewMode]="true"></app-members>
+    </div>
+  </div>
+  <div class="row m-0 p-0" *ngIf="organizationDetails">
+    <div class="col-12" >
+        <app-upadte-info [orgInfo]="organizationDetails" ></app-upadte-info>
+    </div>
+  </div>
+</div>

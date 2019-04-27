@@ -1,0 +1,46 @@
+.card_image{
+    height: 150px;
+    object-fit: cover;
+    background: #e0e0e0;
+}
+
+.avatar-image{
+    height: 90px;
+    width:90px;
+    object-fit: cover;
+    border-radius: 50%;
+    border:3px solid white;
+}
+
+.avatar-div{
+   margin-top: -40px
+}
+
+.company-name{
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.company-desc {
+    font-weight: 500;
+    font-size: 16px;
+    color: #676262;
+}
+
+.tag-info{
+    border-top: 2px solid #d6d3d3;
+    .company-tag{
+        text-align: center;
+        .count{
+            font-size: 14px;
+            font-weight: 600
+        }
+        .desc{
+            font-size: 12px;
+            font-weight: 400;
+            color: gray;
+        }
+    
+    }
+}
+

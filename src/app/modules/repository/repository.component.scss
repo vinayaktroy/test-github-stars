@@ -1,0 +1,23 @@
+.head {
+    font-size: 20px;
+    font-weight: 800;
+    color: #887474;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background: #fffdf7 !important;
+}
+
+.table thead th {
+    border: none
+}
+
+.see-all {
+    p {
+        cursor: pointer;
+        &:hover{
+            text-decoration: underline;
+        }
+        
+    }
+}

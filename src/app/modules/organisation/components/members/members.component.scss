@@ -1,0 +1,45 @@
+.member{
+    border-bottom: 1px solid #f1f1f1;
+    padding: 10px;
+    .avatar{
+        height: 50px;
+        width: 50px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+    .name{
+        text-transform: capitalize;
+        color: black;
+        font-size: 14px;
+        font-weight: 600;
+        margin: 0;
+    }
+    .username{
+        font-size: 10px;
+        color: gray;
+        font-weight: 400;
+        margin: 0;
+    }
+}
+.head{
+    font-size: 20px;
+    font-weight: 800;
+    color: #887474;
+}
+member-container{
+    height: 400px;
+}
+
+.back-icon{
+    font-size: 20px;
+    cursor: pointer;
+    color: #88888a;
+    i{
+        font-size: 20px;
+        color: #88888a;
+    }
+}
+.see-all{
+    box-shadow: -1px 5px 10px -1px #f1f1f1 !important;
+    cursor: pointer;
+}
